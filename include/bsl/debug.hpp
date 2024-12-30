@@ -121,7 +121,7 @@ namespace bsl
         }
 
         o << bsl::bold_grn << "DEBUG" << bsl::rst;
-        details::print_thread_id(o);
+        details::print_thread_id o;
         o << ": ";
 
         return o;
