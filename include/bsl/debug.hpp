@@ -45,7 +45,7 @@
 #include "bsl/safe_integral.hpp"
 #include "bsl/source_location.hpp"    // IWYU pragma: export
 
-#include <bsl/details/print_thread_id.hpp>
+// #include <bsl/details/print_thread_id.hpp>
 
 namespace bsl
 {
