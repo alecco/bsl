@@ -148,6 +148,10 @@ namespace bsl
                         this->fmt_options_impl_type(f, mut_idx);
                         break;
                     }
+                    default: {
+                        // XXX should not be reached?
+                        break;
+                    }
                 }
             }
         }
