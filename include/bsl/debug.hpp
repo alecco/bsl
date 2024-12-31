@@ -45,7 +45,7 @@
 #include "bsl/safe_integral.hpp"
 #include "bsl/source_location.hpp"    // IWYU pragma: export
 
-// #include <bsl/details/print_thread_id.hpp>
+#include <bsl/details/print_thread_id.hpp>
 
 namespace bsl
 {
@@ -120,8 +120,15 @@ namespace bsl
             return o;
         }
 
+#if 0
+        // XXX disabled because we don't have color
         o << bsl::bold_grn << "DEBUG" << bsl::rst;
+        // XXX disabled because we don't have threads
         details::print_thread_id o;
+        o << bsl::bold_grn << "DEBUG" << bsl::rst;
+#else
+        o << "[DEBUG]";
+#endif
         o << ": ";
 
         return o;
