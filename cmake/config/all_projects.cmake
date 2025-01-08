@@ -26,7 +26,7 @@ option(BUILD_TESTS "Turns on/off building the tests" OFF)
 option(ENABLE_CLANG_FORMAT "Turns on/off support for clang format" OFF)
 option(ENABLE_DOXYGEN "Turns on/off support for doxygen" OFF)
 option(ENABLE_COLOR "Turns on/off support for color" OFF)
-option(ENABLE_BRANCH "Turns on/off support for branch coverage with grcov" ON)
+option(ENABLE_BRANCH "Turns on/off support for branch coverage with grcov" OFF)
 
 bf_add_config(
     CONFIG_NAME BSL_DEBUG_LEVEL
