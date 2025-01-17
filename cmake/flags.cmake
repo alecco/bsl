@@ -35,6 +35,7 @@ list(APPEND BSL_WARNINGS
     -Wno-covered-switch-default
     -Wno-invalid-constexpr
     -Wno-unknown-warning-option
+    -Wno-constexpr-dtor
     -fconstexpr-steps=268435456
 )
 
